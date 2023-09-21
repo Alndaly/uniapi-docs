@@ -11,9 +11,9 @@ export default defineConfig({
   description: "Kinda的工具库",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    // nav: [
-    //   { text: 'Home', link: '/' },
-    // ],
+    nav: [
+      { text: 'Web端', link: 'https://tools.kinda.info' },
+    ],
 
     search: {
       provider: 'local'
