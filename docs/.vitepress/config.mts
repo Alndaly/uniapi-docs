@@ -5,6 +5,7 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://docs.tools.kinda.info',
   },
+  head: [['meta', { rel: 'baidu-site-verification', content: 'codeva-FR3kIhR6dO' }]],
   lastUpdated: true,
   title: "Kinda的工具库",
   description: "Kinda的工具库",
