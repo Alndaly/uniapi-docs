@@ -13,6 +13,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Web端', link: 'https://tools.kinda.info' },
+      { text: '个人博客', link: 'https://huaqinda.com' },
     ],
 
     search: {
