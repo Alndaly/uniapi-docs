@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: API概览
-      link: /api-refrence
+      link: /api-refrence/index
     - theme: alt
       text: 更新日志
-      link: /changelog
+      link: /changelog/index
 
 features:
   - title: 简单易用

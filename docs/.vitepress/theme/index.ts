@@ -12,5 +12,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+    Theme.enhanceApp({ app, router, siteData })
   }
 }

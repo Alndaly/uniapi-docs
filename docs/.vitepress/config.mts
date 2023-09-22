@@ -22,19 +22,31 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    
+
     sidebar: [
       {
         text: 'API概览',
-        link: '/api-refrence'
+        link: '/api-refrence/',
+        items: [
+          {
+            text: '图片相关API',
+            link: '/api-refrence/image'
+          }
+        ]
+      },
+      {
+        text: '更新日志',
+        link: '/changelog/',
+        items: [
+          {
+            text: '0.0.1',
+            link: '/changelog/0.0.1'
+          }
+        ]
       },
       {
         text: '类型概览',
         link: '/class-refrence'
-      },
-      {
-        text: '更新日志',
-        link: '/changelog'
       },
       {
         text: '捐赠',
