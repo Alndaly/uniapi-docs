@@ -140,9 +140,9 @@ httpx.post(url=url, data=data, headers=headers)
 | width    | 海报宽度     | 600                                      |
 | height   | 海报高度     | 900                                      |
 | bg_color | 海报背景颜色 | 900                                      |
-| lines    | 线条组       | List[[Line](./class-refrence.md#line)]   |
-| images   | 图片组       | List[[Image](./class-refrence.md#image)] |
-| texts    | 文字组       | List[[Text](./class-refrence.md#text)]   |
+| lines    | 线条组       | List[[Line](../class-refrence.md#line)]   |
+| images   | 图片组       | List[[Image](../class-refrence.md#image)] |
+| texts    | 文字组       | List[[Text](../class-refrence.md#text)]   |
 
 ### 示例
 
