@@ -4,7 +4,7 @@
 
 ### 接口URL
 
-`https://api.kinda.info/kinda/tools/text/emotion`
+`https://api.uniapi.top/text/emotion`
 
 ### 请求方式
 
@@ -23,7 +23,7 @@
 ```python [python]
 import httpx
 
-url = 'https://api.kinda.info/kinda/tools/text/emotion'
+url = 'https://api.uniapi.top/text/emotion'
 data = {
     "text": "好棒"
 }
@@ -38,7 +38,7 @@ httpx.post(url=url, data=data, headers=headers)
 
 ### 接口URL
 
-`https://api.kinda.info/kinda/tools/text/question-answer`
+`https://api.uniapi.top/text/question-answer`
 
 ### 请求方式
 
@@ -58,7 +58,7 @@ httpx.post(url=url, data=data, headers=headers)
 ```python [python]
 import httpx
 
-url = 'https://api.kinda.info/kinda/tools/text/question-answer'
+url = 'https://api.uniapi.top/text/question-answer'
 data = {
     "question": "What is the name of the repository?"
     "answer": "Pipeline has been included in the huggingface/transformers repository."

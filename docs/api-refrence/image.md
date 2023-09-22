@@ -4,7 +4,7 @@
 
 ### 接口URL
 
-`https://api.kinda.info/kinda/tools/image/qr_code/generate`
+`https://api.uniapi.top/image/qr_code/generate`
 
 ### 请求方式
 
@@ -23,7 +23,7 @@
 ```python [python]
 import httpx
 
-url = 'https://api.kinda.info/kinda/tools/image/qr_code/generate'
+url = 'https://api.uniapi.top/image/qr_code/generate'
 data = {
     "data": "https://weixiao.zuowu.cc"
 }
@@ -38,7 +38,7 @@ httpx.post(url=url, data=data, headers=headers)
 
 ### 接口URL
 
-`https://api.kinda.info/kinda/tools/image/zip`
+`https://api.uniapi.top/image/zip`
 
 ### 请求方式
 
@@ -62,7 +62,7 @@ httpx.post(url=url, data=data, headers=headers)
 ```python [python]
 import httpx
 
-url = 'https://api.kinda.info/kinda/tools/image/zip'
+url = 'https://api.uniapi.top/image/zip'
 data = {
     "image_url": "https://oss.weixiao.zuowu.cc/image/16952779056484F52474BCB05.jpg",
     "zip_degree": 10
@@ -78,7 +78,7 @@ httpx.post(url=url, data=data, headers=headers)
 
 ### 接口URL
 
-`https://api.kinda.info/kinda/tools/image/concat`
+`https://api.uniapi.top/image/concat`
 
 ### 请求方式
 
@@ -107,7 +107,7 @@ httpx.post(url=url, data=data, headers=headers)
 ```python [python]
 import httpx
 
-url = 'https://api.kinda.info/kinda/tools/image/concat'
+url = 'https://api.uniapi.top/image/concat'
 data = {
     "rows": 2,
     "cols": 2,
@@ -127,7 +127,7 @@ httpx.post(url=url, data=data, headers=headers)
 
 ### 接口URL
 
-`https://api.kinda.info/kinda/tools/image/poster`
+`https://api.uniapi.top/image/poster`
 
 ### 请求方式
 
@@ -151,7 +151,7 @@ httpx.post(url=url, data=data, headers=headers)
 ```python [python]
 import httpx
 
-url = 'https://api.kinda.info/kinda/tools/image/poster'
+url = 'https://api.uniapi.top/image/poster'
 data = {
     "width": 600,
     "height": 900,
