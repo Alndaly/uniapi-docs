@@ -4,7 +4,7 @@
 
 ### 接口URL
 
-`https://api.kinda.info/kinda/tools/qr_code/generate`
+`https://api.kinda.info/kinda/tools/image/qr_code/generate`
 
 ### 请求方式
 
@@ -23,7 +23,7 @@
 ```python [python]
 import httpx
 
-url = 'https://api.kinda.info/kinda/tools/image/concat'
+url = 'https://api.kinda.info/kinda/tools/image/qr_code/generate'
 data = {
     "data": "https://weixiao.zuowu.cc"
 }
