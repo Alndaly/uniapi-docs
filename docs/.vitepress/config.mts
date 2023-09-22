@@ -3,15 +3,15 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   sitemap: {
-    hostname: 'https://docs.tools.kinda.info',
+    hostname: 'https://docs.uniapi.top',
   },
   head: [['meta', { name: 'baidu-site-verification', content: 'codeva-FR3kIhR6dO' }]],
   lastUpdated: true,
-  title: "Kinda的工具库",
-  description: "Kinda的工具库",
+  title: "UniApi",
+  description: "UniApi，通用工具型API",
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/Alndaly/kinda-tools-docs/edit/master/docs/:path'
+      pattern: 'https://github.com/Alndaly/uniapi-docs/edit/master/docs/:path'
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -64,7 +64,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Alndaly/kinda-tools-docs' }
+      { icon: 'github', link: 'https://github.com/Alndaly/uniapi-docs' }
     ]
   }
 })

@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Kinda的工具库"
+  name: "UniAPI"
   text: "工具调用从未如此简单"
   tagline: 活在自由而蔚蓝的天空之下！
   actions:

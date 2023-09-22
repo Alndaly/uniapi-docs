@@ -89,3 +89,10 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
+.image-src {
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none !important;
+}
