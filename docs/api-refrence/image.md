@@ -1,5 +1,39 @@
 # 图片相关API
 
+## 二维码解析
+
+### 接口URL
+
+`https://api.uniapi.top/image/qr_code/decode`
+
+### 请求方式
+
+`POST`
+
+### 传参
+
+| 参数名 | 参数含义       | 参数示例                 |
+| ------ | -------------- | ------------------------ |
+| url    | 二维码图片链接 | `https://test.com/1.png` |
+
+### 示例
+
+::: code-group
+
+```python [python]
+import httpx
+
+url = 'https://api.uniapi.top/image/qr_code/decode'
+data = {
+    "url": "https://test.com/1.png"
+}
+headers = {
+    "Content-Type": "application/json"
+}
+httpx.post(url=url, data=data, headers=headers)
+```
+:::
+
 ## 二维码生成
 
 ### 接口URL
@@ -135,11 +169,11 @@ httpx.post(url=url, data=data, headers=headers)
 
 ### 传参 
 
-| 参数名   | 参数含义     | 参数示例                                 |
-| -------- | ------------ | ---------------------------------------- |
-| width    | 海报宽度     | 600                                      |
-| height   | 海报高度     | 900                                      |
-| bg_color | 海报背景颜色 | 900                                      |
+| 参数名   | 参数含义     | 参数示例                                  |
+| -------- | ------------ | ----------------------------------------- |
+| width    | 海报宽度     | 600                                       |
+| height   | 海报高度     | 900                                       |
+| bg_color | 海报背景颜色 | 900                                       |
 | lines    | 线条组       | List[[Line](../class-refrence.md#line)]   |
 | images   | 图片组       | List[[Image](../class-refrence.md#image)] |
 | texts    | 文字组       | List[[Text](../class-refrence.md#text)]   |
