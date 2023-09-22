@@ -36,6 +36,10 @@ export default defineConfig({
         text: '更新日志',
         link: '/changelog'
       },
+      {
+        text: '捐赠',
+        link: '/donate'
+      },
     ],
 
     footer: {
