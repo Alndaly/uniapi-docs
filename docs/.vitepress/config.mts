@@ -29,8 +29,12 @@ export default defineConfig({
         link: '/api-refrence/',
         items: [
           {
-            text: '图片相关API',
+            text: '图片API',
             link: '/api-refrence/image'
+          },
+          {
+            text: '文本API',
+            link: '/api-refrence/text'
           }
         ]
       },
