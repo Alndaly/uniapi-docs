@@ -1,6 +1,6 @@
-# Kinda工具库文档网站源码
+# UniAPI接口网站源码
 
-[文档网站链接](https://docs.tools.kinda.info)
+[文档网站链接](https://uniapi.top)
 
 ## 捐赠支持
 
