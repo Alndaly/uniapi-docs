@@ -10,6 +10,9 @@ export default defineConfig({
   title: "Kinda的工具库",
   description: "Kinda的工具库",
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/Alndaly/kinda-tools-docs/edit/master/docs/:path'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Web端', link: 'https://tools.kinda.info' },
