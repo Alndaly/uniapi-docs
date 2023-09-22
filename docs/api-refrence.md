@@ -6,6 +6,10 @@
 
 `https://api.kinda.info/kinda/tools/qr_code/generate`
 
+### 请求方式
+
+`POST`
+
 ### 传参
 
 | 参数名 | 参数含义       | 参数示例 |
@@ -35,6 +39,10 @@ httpx.post(url=url, data=data, headers=headers)
 ### 接口URL
 
 `https://api.kinda.info/kinda/tools/image/zip`
+
+### 请求方式
+
+`POST`
 
 ### 传参
 
@@ -72,14 +80,18 @@ httpx.post(url=url, data=data, headers=headers)
 
 `https://api.kinda.info/kinda/tools/image/concat`
 
+### 请求方式
+
+`POST`
+
 ### 传参
 
 | 参数名      | 参数含义       | 参数示例  |
 | ----------- | -------------- | --------- |
-| rows        | 海报宽度       | 2         |
-| cols        | 海报高度       | 2         |
-| unit_width  | 线条组         | 600       |
-| unit_height | 图片组         | 900       |
+| rows        | 行数           | 2         |
+| cols        | 列数           | 2         |
+| unit_width  | 每张图片的宽度 | 600       |
+| unit_height | 每张图片的高度 | 900       |
 | quality     | 生成图片的质量 | 10        |
 | images      | 图片数组       | List[url] |
 
@@ -116,6 +128,10 @@ httpx.post(url=url, data=data, headers=headers)
 ### 接口URL
 
 `https://api.kinda.info/kinda/tools/image/poster`
+
+### 请求方式
+
+`POST`
 
 ### 传参 
 
