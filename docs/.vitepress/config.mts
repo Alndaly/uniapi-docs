@@ -5,7 +5,7 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://docs.uniapi.top',
   },
-  head: [['meta', { name: 'baidu-site-verification', content: 'codeva-FR3kIhR6dO' }]],
+  head: [['meta', { name: 'baidu-site-verification', content: 'codeva-I7ftDgPZi2' }]],
   lastUpdated: true,
   title: "UniApi",
   description: "UniApi，通用工具型API",
