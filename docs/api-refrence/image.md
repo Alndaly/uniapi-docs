@@ -32,7 +32,36 @@ headers = {
 }
 httpx.post(url=url, data=data, headers=headers)
 ```
+
+```js [微信小程序]
+const url = 'https://api.uniapi.top/image/qr_code/decode'
+const data = {
+    "url": "https://test.com/1.png"
+}
+const headers = {
+    "Content-Type": "application/json"
+}
+wx.request({
+    url: url, 
+    headers: headers,
+    data: data,
+    success(res){
+        console.log(res)
+    },
+    fail(err){
+        console.error(err)
+    }
+})
+```
 :::
+
+### 返回范例
+
+```json
+{
+    "content": "https://weixiao.zuowu.cc"
+}
+```
 
 ## 二维码生成
 
@@ -66,7 +95,37 @@ headers = {
 }
 httpx.post(url=url, data=data, headers=headers)
 ```
+
+```js [微信小程序]
+const url = 'https://api.uniapi.top/image/qr_code/generate'
+const data = {
+    "data": "https://weixiao.zuowu.cc"
+}
+const headers = {
+    "Content-Type": "application/json"
+}
+wx.request({
+    url: url, 
+    headers: headers,
+    data: data,
+    success(res){
+        console.log(res)
+    },
+    fail(err){
+        console.error(err)
+    }
+})
+```
 :::
+
+### 返回范例
+
+```json
+{
+    "url": "https://api.uniapi.top/temp/images/20825117-139a-4f4b-a54e-fb1950dfafcc.png",
+    "expire": 600
+}
+```
 
 ## 压缩图片
 
@@ -106,7 +165,38 @@ headers = {
 }
 httpx.post(url=url, data=data, headers=headers)
 ```
+```js [微信小程序]
+const url = 'https://api.uniapi.top/image/zip'
+const data = {
+    "image_url": "https://oss.weixiao.zuowu.cc/image/16952779056484F52474BCB05.jpg",
+    "zip_degree": 10
+}
+const headers = {
+    "Content-Type": "application/json"
+}
+wx.request({
+    url: url, 
+    headers: headers,
+    data: data,
+    success(res){
+        console.log(res)
+    },
+    fail(err){
+        console.error(err)
+    }
+})
+```
 :::
+
+### 返回范例
+
+```json
+{
+    "image_url": "https://test.com/1.png",
+    "zip_degree": 90, 
+    "image_size": "2333"
+}
+```
 
 ## 拼接图片
 
@@ -155,7 +245,40 @@ headers = {
 }
 httpx.post(url=url, data=data, headers=headers)
 ```
+```js [微信小程序]
+const url = 'https://api.uniapi.top/image/concat'
+const data = {
+    "rows": 2,
+    "cols": 2,
+    "unit_width": 600,
+    "unit_height": 900,
+    "quality": 10,
+    "images": ["https://oss.weixiao.zuowu.cc/image/16952779056484F52474BCB05.jpg", "https://oss.weixiao.zuowu.cc/image/1695277905661962DEC0BEFA5.jpg", "https://oss.weixiao.zuowu.cc/image/1695277905665067D45D14B8E.jpg", "https://oss.weixiao.zuowu.cc/image/169527790566722E25FA78700.jpg"]
+}
+const headers = {
+    "Content-Type": "application/json"
+}
+wx.request({
+    url: url, 
+    headers: headers,
+    data: data,
+    success(res){
+        console.log(res)
+    },
+    fail(err){
+        console.error(err)
+    }
+})
+```
 :::
+
+### 返回范例
+
+```json
+{
+    "image_url": "http://kinda-tools.oss-cn-hangzhou.aliyuncs.com/image%2Fconcated_33467750-4939-4d83-9b0a-e520b3b5897a.jpg?OSSAccessKeyId=LTAI5t7rbLzmDacFf5igvY12&Expires=1695451527&Signature=MP4jIGjho8x2RwUN%2FPZxdnNiK0o%3D"
+}
+```
 
 ## 制作海报
 
@@ -224,4 +347,62 @@ headers = {
 }
 httpx.post(url=url, data=data, headers=headers)
 ```
+```js [微信小程序]
+const url = 'https://api.uniapi.top/image/poster'
+const data = {
+     "width": 600,
+    "height": 900,
+    "bg_color": "#ccc",
+    "lines": [
+        {
+            "color": "#000",
+            "thick": "25",
+            "box": [
+                [0, 0], 
+                [600, 900]
+            ]
+        }
+    ],
+    "images": [
+        {
+            "url": "https://oss.weixiao.zuowu.cc/image/16952779056484F52474BCB05.jpg",
+            "box": [
+                [0, 0], 
+                [600, 800]
+            ]
+        }
+    ],
+    "texts": [
+        {
+            "text": "测试测试测试测试测试测试测试",
+            "font_size": "25",
+            "color": "yellow",
+            "start_point": [0, 0],
+            "width": 100
+        }
+    ]
+}
+const headers = {
+    "Content-Type": "application/json"
+}
+wx.request({
+    url: url, 
+    headers: headers
+    data: data,
+    success(res){
+        console.log(res)
+    },
+    fail(err){
+        console.error(err)
+    }
+})
+```
 :::
+
+### 返回范例
+
+```json
+{
+    "image_url": "http://kinda-tools.oss-cn-hangzhou.aliyuncs.com/image%2Fposter_7273a0ec-3f7f-43f3-a79e-e7c1ec265818.jpg?OSSAccessKeyId=LTAI5t7rbLzmDacFf5igvY12&Expires=1695451479&Signature=59jgY%2BaMe7iYujClBCZwZ7GX4lk%3D"
+}
+```

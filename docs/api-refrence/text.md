@@ -32,7 +32,37 @@ headers = {
 }
 httpx.post(url=url, data=data, headers=headers)
 ```
+
+```js [微信小程序]
+const url = 'https://api.uniapi.top/text/emotion'
+const data = {
+    "text": "好棒"
+}
+const headers = {
+    "Content-Type": "application/json"
+}
+wx.request({
+    url: url, 
+    headers: headers,
+    data: data,
+    success(res){
+        console.log(res)
+    },
+    fail(err){
+        console.error(err)
+    }
+})
+```
 :::
+
+### 返回范例
+
+```json
+{
+    "label": "POSITIVE",
+    "score": 0.9996980428695679
+}
+```
 
 ## 答案抽取 <Badge type="warning" text="限时免费" />
 
@@ -68,4 +98,37 @@ headers = {
 }
 httpx.post(url=url, data=data, headers=headers)
 ```
+
+```js [微信小程序]
+const url = 'https://api.uniapi.top/text/question-answer'
+const data = {
+    "question": "What is the name of the repository?"
+    "answer": "Pipeline has been included in the huggingface/transformers repository."
+}
+const headers = {
+    "Content-Type": "application/json"
+}
+wx.request({
+    url: url, 
+    headers: headers,
+    data: data,
+    success(res){
+        console.log(res)
+    },
+    fail(err){
+        console.error(err)
+    }
+})
+```
 :::
+
+### 返回范例
+
+```json
+{
+    "score": 0.9996980428695679,
+    "start": 12,
+    "end": 20,
+    "answer": "huggingface/transformers"
+}
+```
