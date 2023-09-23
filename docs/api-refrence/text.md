@@ -43,7 +43,8 @@ const headers = {
 }
 wx.request({
     url: url, 
-    headers: headers,
+    header: headers,
+    method: "POST",
     data: data,
     success(res){
         console.log(res)
@@ -110,7 +111,8 @@ const headers = {
 }
 wx.request({
     url: url, 
-    headers: headers,
+    header: headers,
+    method: "POST",
     data: data,
     success(res){
         console.log(res)
