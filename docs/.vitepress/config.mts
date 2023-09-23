@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   sitemap: {
-    hostname: 'https://docs.uniapi.top',
+    hostname: 'https://uniapi.top',
   },
   head: [['meta', { name: 'baidu-site-verification', content: 'codeva-I7ftDgPZi2' }]],
   lastUpdated: true,
