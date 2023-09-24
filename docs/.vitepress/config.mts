@@ -7,8 +7,8 @@ export default defineConfig({
   },
   head: [['meta', { name: 'baidu-site-verification', content: 'codeva-I7ftDgPZi2' }]],
   lastUpdated: true,
-  title: "UniApi",
-  description: "UniApi，通用工具型API",
+  title: "UniAPI",
+  description: "UniAPI，通用工具型API",
   themeConfig: {
     editLink: {
       pattern: 'https://github.com/Alndaly/uniapi-docs/edit/master/docs/:path'
