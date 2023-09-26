@@ -1,6 +1,6 @@
 # 文本相关API
 
-## 情绪分析 <Badge type="warning" text="限时免费" />
+## 情绪分析 <Badge type="warning" text="API-KEY" />
 
 ### 接口URL
 
@@ -65,7 +65,7 @@ wx.request({
 }
 ```
 
-## 答案抽取 <Badge type="warning" text="限时免费" />
+## 答案抽取 <Badge type="warning" text="API-KEY" />
 
 ### 接口URL
 

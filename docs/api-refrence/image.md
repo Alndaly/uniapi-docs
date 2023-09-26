@@ -64,7 +64,7 @@ wx.request({
 }
 ```
 
-## 二维码生成
+## 二维码生成<Badge type="warning" text="API-KEY" />
 
 ### 接口URL
 
@@ -92,6 +92,7 @@ data = {
     "data": "https://weixiao.zuowu.cc"
 }
 headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 httpx.post(url=url, data=data, headers=headers)
@@ -103,6 +104,7 @@ const data = {
     "data": "https://weixiao.zuowu.cc"
 }
 const headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 wx.request({
@@ -129,7 +131,7 @@ wx.request({
 }
 ```
 
-## 压缩图片
+## 压缩图片<Badge type="warning" text="API-KEY" />
 
 ### 接口URL
 
@@ -163,6 +165,7 @@ data = {
     "zip_degree": 10
 }
 headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 httpx.post(url=url, data=data, headers=headers)
@@ -174,6 +177,7 @@ const data = {
     "zip_degree": 10
 }
 const headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 wx.request({
@@ -201,7 +205,7 @@ wx.request({
 }
 ```
 
-## 拼接图片
+## 拼接图片<Badge type="warning" text="API-KEY" />
 
 ### 接口URL
 
@@ -244,6 +248,7 @@ data = {
     "images": ["https://oss.weixiao.zuowu.cc/image/16952779056484F52474BCB05.jpg", "https://oss.weixiao.zuowu.cc/image/1695277905661962DEC0BEFA5.jpg", "https://oss.weixiao.zuowu.cc/image/1695277905665067D45D14B8E.jpg", "https://oss.weixiao.zuowu.cc/image/169527790566722E25FA78700.jpg"]
 }
 headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 httpx.post(url=url, data=data, headers=headers)
@@ -259,6 +264,7 @@ const data = {
     "images": ["https://oss.weixiao.zuowu.cc/image/16952779056484F52474BCB05.jpg", "https://oss.weixiao.zuowu.cc/image/1695277905661962DEC0BEFA5.jpg", "https://oss.weixiao.zuowu.cc/image/1695277905665067D45D14B8E.jpg", "https://oss.weixiao.zuowu.cc/image/169527790566722E25FA78700.jpg"]
 }
 const headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 wx.request({
@@ -284,7 +290,7 @@ wx.request({
 }
 ```
 
-## 制作海报
+## 制作海报<Badge type="warning" text="API-KEY" />
 
 ### 接口URL
 
@@ -347,6 +353,7 @@ data = {
     ]
 }
 headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 httpx.post(url=url, data=data, headers=headers)
@@ -387,6 +394,7 @@ const data = {
     ]
 }
 const headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 wx.request({

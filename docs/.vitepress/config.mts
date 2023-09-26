@@ -15,7 +15,7 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Web端', link: 'https://tools.kinda.info' },
+      { text: '控制台', link: 'https://manage.uniapi.top' },
       { text: '个人博客', link: 'https://huaqinda.com' },
     ],
 
@@ -24,6 +24,10 @@ export default defineConfig({
     },
 
     sidebar: [
+      {
+        text: '快速开始',
+        link: '/quick-start/',
+      },
       {
         text: 'API概览',
         link: '/api-refrence/',
