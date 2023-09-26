@@ -28,6 +28,7 @@ data = {
     "text": "好棒"
 }
 headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 httpx.post(url=url, data=data, headers=headers)
@@ -39,6 +40,7 @@ const data = {
     "text": "好棒"
 }
 const headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 wx.request({
@@ -95,6 +97,7 @@ data = {
     "answer": "Pipeline has been included in the huggingface/transformers repository."
 }
 headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 httpx.post(url=url, data=data, headers=headers)
@@ -107,6 +110,7 @@ const data = {
     "answer": "Pipeline has been included in the huggingface/transformers repository."
 }
 const headers = {
+    "API-KEY": "<Your Api-Key>",
     "Content-Type": "application/json"
 }
 wx.request({
