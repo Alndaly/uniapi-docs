@@ -26,7 +26,7 @@ export default defineConfig({
     sidebar: [
       {
         text: '快速开始',
-        link: '/quick-start/',
+        link: '/quick-start',
       },
       {
         text: 'API概览',
