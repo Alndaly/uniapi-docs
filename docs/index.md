@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "UniAPI"
-  text: "全平台工具调用从未如此简单"
+  text: "工具调用从未如此简单"
   tagline: 活在自由而蔚蓝的天空之下！
   actions:
     - theme: brand
@@ -24,4 +24,3 @@ features:
   - title: 迭代迅速
     details: 因为有项目依赖，此项目会迅速迭代更新，确保适应不同阶段需求。
 ---
-
