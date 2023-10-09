@@ -39,6 +39,10 @@ export default defineConfig({
           {
             text: '文本API',
             link: '/api-refrence/text'
+          },
+          {
+            text: '媒体API',
+            link: '/api-refrence/media'
           }
         ]
       },
@@ -49,6 +53,10 @@ export default defineConfig({
           {
             text: '0.0.1',
             link: '/changelog/0.0.1'
+          },
+          {
+            text: '0.0.2',
+            link: '/changelog/0.0.2'
           }
         ]
       },
