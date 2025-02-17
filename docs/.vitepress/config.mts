@@ -16,7 +16,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '控制台', link: 'https://manage.uniapi.top' },
-      { text: '个人博客', link: 'https://huaqinda.com' },
     ],
 
     search: {
@@ -71,8 +70,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present <a href="https://github.com/Alndaly">Kinda Hall</a>'
+      message: '<a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2024137385号-1</a>',
+      copyright: 'Copyright © 2023-present <a href="https://www.qingyon.com" target="_blank">QingYun Technology</a>'
     },
 
     socialLinks: [
