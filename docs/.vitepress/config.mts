@@ -70,7 +70,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '<a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2024137385号-1</a>',
+      message: '<a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2024137385号-2</a>',
       copyright: 'Copyright © 2023-present <a href="https://www.qingyon.com" target="_blank">QingYun Technology</a>'
     },
 
